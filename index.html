@@ -1,41 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Kapi Sateré-Mawé</title>
+  <head>
+    <meta charset="UTF-8">
+        <title>Site de viagem da Kapi Sateré-Mawé</title>
         <link rel="stylesheet" href="./CSS/estilo.css">
+        <script rel="script.js" defer></script>
 
-    </head>
+    <!--Incluir o css do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!--Início do Menu-->
+    <table width="100%" bgcolor="CornflowerBlue">
+      <tr>
+          <td align="center" width="25%"><a href="index.html"><font color="black">Home</font></a></td>
+          <td align="center" width="25%"><a href="destino.html"><font color="black">Destino</font></a></td>
+          <td align="center" width="25%"><a href="promoção.html"><font color="black">Promoção</font></a></td>
+          <td align="center" width="25%"><a href="Contato.html"><font color="black">Contato</font></a></td>
+      </tr>
+  </table>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+
+        <!--Inicio indicadores para navegar nos slides do carousel -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imagens/slale show/canoa_a_1.JPG" style="height: 400px;" width="700px" class="d-block w-100" alt="Categoria 1">  
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/slale show/canoa_a_2.JPG" style="height: 400px;" width="700px" class="d-block w-100" alt="Categoria 2">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/slale show/canoa_a_3.JPG" style="height: 400px;" width="700px" class="d-block w-100" alt="Categoria 3">
+            </div>
+            <div class="carousel-item">
+              <img src="./imagens/slale show/canoa_a_4.jpg" style="height: 400px;" width="700px" class="d-block w-100" alt="Categoria 4">
+          </div>
+          </div>
+        </div>
+        
+        <!--Fim indicadores para navegar nos slides do carousel -->
+
+        <!--Início anterior e proximo slides do carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!--Fim anterior e proximo slides do carousel -->
+        </div>
+        
+        <!--Incluir o JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
     <body>
-        <!--Início do Menu-->
-        <table width="100%" bgcolor="red"
-            <tr>
-                <td align="center" width="25%"><a href="index.html"><font color="white"><img width="50%"src="imagens/capa kapi.jpg" alt="Kapi Sateré-Mawé"></font></a></td>
-                <td align="center" width="25%"><a href="cultura.html"><font color="white">Cultura</font></a></td>
-                <td align="center" width="25%"><a href="projetos.html"><font color="white">Projetos</font></a></td>
-                <td align="center" width="25%"><a href="Contato.html"><font color="white">Contato</font></a></td>
-            </tr>
-        </table>
+        
         <nav>
             
         </nav>
         <!--Fim do menu-->
-        <br> <br> <br> <br>
+        <br> <br> 
 
         <h1>
-            <font face="Arial"></font>Seja Bem Vindo (a)!</font>
+            <font face="Arial" ></font></font>
+            <font face="Arial" color="green" size=7>Sejam muito bem Vindos (a)!</font><br>
         </h1>
-        <p class="destaque">Aqui você vai conhecer um pouco sobre a Associação dos <b>KAPI SATERÉ-MAWÉ!</b>
+        <p class="destaque">Site de <b>VIAGEM</b> da <b>KAPI SATERÉ-MAWÉ!</b>
 
-        <br> <br> <br> <br>
+        <br> <br> <br>
 
-        <p id="nome_da_cor">Waku Uiwyria'in</p>
-        <p>Tudo bem parentes</p>
-        <p>WAKU SESE</p>
+        <p id="nome_da_cor">Viagens Inesquecíveis</p>
+        <p>Lugares Incríveis</p>
+        <p>Compre logo suas passagens!</p>
         <h4>
-            <font face="Arial" color="green">Doação</font>
+            <font face="Arial" color="green" size=2>Formas de Pagamento</font><br>
         </h4>
-        <img src="./imagens/R.png" width="120px" alt="Doação">
+        <img src="./imagens/OIP.jpg" width="200px" alt="Formas de pagamento">
         <span>
         <span>
     <center>
