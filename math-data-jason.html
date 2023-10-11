@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Data, Math e JSON</title> 
+</head>
+<body>
+    <h3>Funções Data, Math e JSON</h3>
+    <script type="text/javascript">
+        //Gerando um número aleatório através do random()
+        //Arredondando esse número através do floor
+        //Aumentando o intervalo do meu número aleatório multiplicando ele pelo valor que eu quiser
+        const numeroAleatorio = Math.floor(Math.random() * 20);
+        document.write("<p>" + numeroAleatorio);
+
+        //Criar um objeto Date representando a data atual
+        const dataAtual = new Date();
+        document.write ("<p>" + dataAtual);
+        const ano = dataAtual.getFullYear()
+        document.write("<p>" + ano);
+
+        const pessoaJSON = {
+            "nome" : "Josias",
+            "idade" : 18,
+            "cidade" : "Sao Paulo",
+            "compras" : [
+                {"produto": "Playstation 5", "preco": 3999.99},
+                {"produto": "Ea Sport Fc 24", "preco": 299.90},
+                {"produto": "Mortal Kombat 1", "preco": 299.99}
+            ]
+        };
+
+        document.write("<h3>Compras de " + pessoaJSON.nome + "<h3>");
+        document.write("<ul>");
+            
+        pessoaJSON.compras.forEach(function(compra) {
+            document.write ("<li>Produto " + compra.produto + " - preço: R$ " + compra.preco.toFixed(2) + "</li>");
+        });
+
+        const total = pessoaJSON.compras.reduce((acumulador, compra) => acumulador + compra.preco, 0);
+        document.write ("</ul>");
+
+        document.write ("<i> Você estourou seu cartão com jogos, veja o total: R$" + total + "</i>");
+    </script>
+</body>
+</html>
